@@ -26,7 +26,7 @@ def packet_sniff(packet):
 
 if __name__ == "__main__":
     if os.geteuid() != 0:
-        print("This script requires root privileges. Please run as root.")
+        print("This script requires root")
         sys.exit(1)
     packet_counter = defaultdict(int)
     start_time = [time.time()]
